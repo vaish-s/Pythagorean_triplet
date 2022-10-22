@@ -11,6 +11,7 @@ class ptriplet {
         long a = 0, i, j, k, c, l;
         System.out.println("Input the number upto which you want to check");
         a = Long.parseLong(br.readLine());
+        
         for (i = 3; i <= a; i++) {
             for (j = i + 1; j <= a; j++) {
                 for (k = j + 1; k <= a; k++) {
@@ -24,15 +25,18 @@ class ptriplet {
                     }
                     if (c == 0) {
                         // Triprime checked
-
+                        
                         if (i * i + j * j == k * k) {
                             System.out.println(i + " , " + j + " , " + k);
                             ob.println(i + " , " + j + " , " + k);
                         }
+
+                        
                     }
                 }
             }
         }
         ob.close();
+        
     }
 }
